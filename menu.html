@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agave | Full Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #d35400;
+            --dark-color: #1a1a1a;
+            --white: #ffffff;
+            --text-color: #333333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        body { background-color: #fffdf9; color: var(--text-color); padding-bottom: 60px; }
+
+        /* Header شيك فيه زرار العودة */
+        header { background: var(--dark-color); padding: 20px 0; position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--white); text-transform: uppercase; letter-spacing: 2px; text-decoration: none; }
+        .back-btn { color: var(--white); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color 0.3s; }
+        .back-btn:hover { color: var(--primary-color); }
+
+        .menu-header { text-align: center; padding: 5px 20px; margin-top: 40px; }
+        .menu-header h1 { font-size: 3rem; color: var(--dark-color); }
+        .menu-header p { color: var(--primary-color); font-weight: 600; font-size: 1.2rem; margin-top: 10px; }
+
+        /* تقسيمات المنيو */
+        .menu-container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+        .category-title { font-size: 2rem; color: var(--dark-color); border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 30px; margin-top: 40px; text-transform: uppercase; letter-spacing: 1px; }
+
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .menu-item { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; border: 1px solid #eee; }
+        .item-img { height: 200px; background-size: cover; background-position: center; }
+        .item-details { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .item-title-price { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .item-title-price h3 { font-size: 1.3rem; color: var(--dark-color); }
+        .price { color: var(--primary-color); font-weight: bold; font-size: 1.2rem; }
+        .item-desc { color: #666; font-size: 0.95rem; }
+
+        footer { text-align: center; padding: 30px; background: var(--dark-color); color: #666; margin-top: 80px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">AGAVE</a>
+            <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </header>
+
+    <div class="menu-header">
+        <h1>Our Full Menu</h1>
+        <p>Crafted with Passion, Served with Love</p>
+    </div>
+
+    <div class="menu-container">
+        
+        <!-- FIRST CATEGORY: APPETIZERS -->
+        <h2 class="category-title">Appetizers</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="item-img" style="background-image: url('https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?q=80&w=500');"></div>
+                <div class="item-details">
+                    <div class="item-title-price">
+                        <h3>Tableside Guacamole</h3>
+                        <span class="price">$12.00</span>
+                    </div>
+                    <p class="item-desc">Fresh avocados, diced tomatoes, onions, cilantro, and fresh lime juice. Prepared right to your taste.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-img" style="background-image: url('https://images.unsplash.com/photo-1582231373663-aa21d17bc69a?q=80&w=500');"></div>
+                <div class="item-details">
+                    <div class="item-title-price">
+                        <h3>Agave Nachos</h3>
+                        <span class="price">$14.50</span>
+                    </div>
+                    <p class="item-desc">Crispy tortilla chips smothered in black beans, melted queso, jalapeños, and sour cream.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECOND CATEGORY: ENTRÉES -->
+        <h2 class="category-title">Entrées (Main Dishes)</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="item-img" style="background-image: url('https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=500');"></div>
+                <div class="item-details">
+                    <div class="item-title-price">
+                        <h3>Street Tacos Trio</h3>
+                        <span class="price">$16.99</span>
+                    </div>
+                    <p class="item-desc">Three soft corn tortillas with your choice of Barbacoa, Carnitas, or Grilled Chicken, topped with cilantro and onions.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-img" style="background-image: url('https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=500');"></div>
+                <div class="item-details">
+                    <div class="item-title-price">
+                        <h3>Sizzling Fajitas</h3>
+                        <span class="price">$21.00</span>
+                    </div>
+                    <p class="item-desc">Served on a sizzling skillet with bell peppers and onions. Accompanied by rice, beans, and warm tortillas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- THIRD CATEGORY: DRINKS -->
+        <h2 class="category-title">Signature Drinks</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="item-img" style="background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=500');"></div>
+                <div class="item-details">
+                    <div class="item-title-price">
+                        <h3>Premium Margarita</h3>
+                        <span class="price">$11.00</span>
+                    </div>
+                    <p class="item-desc">Our house specialty made with 100% blue agave tequila, organic agave nectar, and fresh squeezed lime juice.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Agave Restaurant. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
